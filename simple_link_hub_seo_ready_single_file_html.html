@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FSRP HUB Link</title>
+  <meta name="description" content="A simple place to keep our links in one spot." />
+
+  <style>
+    :root{
+      --bg: #101014;
+      --panel: #1a1a24;
+      --text: #f0f0f5;
+      --muted: #9d9db2;
+      --accent: #5865f2;
+      --radius: 12px;
+    }
+    body{
+      margin:0; font: 15px/1.6 "Segoe UI", sans-serif;
+      background: linear-gradient(160deg, #101014, #181822);
+      color:var(--text);
+    }
+    .wrap{ max-width:900px; margin:auto; padding:28px }
+    header{ text-align:center; margin-bottom:28px }
+    h1{ font-size:26px; margin:0; color:var(--accent) }
+    .subtitle{ font-size:14px; color:var(--muted); margin-top:6px }
+
+    .grid{ display:grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap:16px }
+    .card{ background:var(--panel); padding:16px; border-radius:var(--radius); border:1px solid rgba(255,255,255,.1); position:relative; transition:.2s transform, .2s box-shadow }
+    .card:hover{ transform:translateY(-3px); box-shadow:0 0 14px rgba(88,101,242,.35) }
+    .row{ display:flex; align-items:center; gap:10px }
+    .favicon{ width:22px; height:22px; border-radius:6px }
+    .name{ font-size:15px; margin:0 }
+    .desc{ font-size:13px; color:var(--muted); margin-top:6px }
+    a.card-link{ position:absolute; inset:0; border-radius:var(--radius); outline:none }
+    footer{ text-align:center; margin-top:40px; font-size:12px; color:var(--muted) }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Florida State Roleplay</h1>
+      <div class="subtitle">A simple place to keep our links in one spot.</div>
+    </header>
+
+    <div class="grid">
+      <article class="card">
+        <a class="card-link" href="https://discord.gg/bfdRHWm8u2" target="_blank" rel="noopener"></a>
+        <div class="row">
+          <img class="favicon" src="https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg" alt="Steam" />
+          <h2 class="name">Our Discord Server</h2>
+        </div>
+        <p class="desc">Helps us all stay connected and updated.</p>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="https://www.youtube.com/@FSRPCommunity" target="_blank" rel="noopener"></a>
+        <div class="row">
+          <img class="favicon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="Youtube" />
+          <h2 class="name">Our (LONG FORM) only Youtube channel</h2>
+        </div>
+        <p class="desc">Announcements, Updates (ETC).</p>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="https://www.youtube.com/@FSRPCOMMUNITY-v2x" target="_blank" rel="noopener"></a>
+        <div class="row">
+          <img class="favicon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="Youtube" />
+          <h2 class="name">Our (LONG FORM+SHORT FORM) only Youtube channel</h2>
+        </div>
+        <p class="desc">Entertainment, Showcase (ETC).</p>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="https://www.roblox.com/games/118877259185814/Orlando-Florida-Roleplay-community" target="_blank" rel="noopener"></a>
+        <div class="row">
+          <img class="favicon" src="https://static.wikia.nocookie.net/roblox/images/4/4d/BlueRobloxLogo.png/revision/latest/scale-to-width-down/250?cb=20250626184501" alt="Roblox" />
+          <h2 class="name">Our Roblox Game</h2>
+        </div>
+        <p class="desc">Roleplay & Have fun.</p>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="https://www.roblox.com/games/90761043996387/FSRP-Office" target="_blank" rel="noopener"></a>
+        <div class="row">
+          <img class="favicon" src="https://static.wikia.nocookie.net/roblox/images/4/4d/BlueRobloxLogo.png/revision/latest/scale-to-width-down/250?cb=20250626184501" alt="Roblox" />
+          <h2 class="name">FSRP Games Office</h2>
+        </div>
+        <p class="desc">Roleplay about ideas about the game.</p>
+      </article>
+    </div>
+
+    <footer>
+      <p>Made by Maj, please enjoy. © <span id="year"></span></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
